@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-slate-100;
+  }
+}
+
+/* Custom SOC Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.soc-glass {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+}
+
+.soc-glow-red {
+  box-shadow: 0 0 15px -3px rgba(239, 68, 68, 0.3);
+}
+
+.soc-glow-emerald {
+  box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.3);
+}
+
+.soc-glow-amber {
+  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.3);
+}
